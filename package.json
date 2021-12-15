@@ -1,0 +1,22 @@
+{
+  "name": "DailyJournalv2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Arushi",
+  "license": "MIT",
+  "dependencies": {
+    "argon2": "^0.28.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^10.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^6.0.5"
+  }
+}

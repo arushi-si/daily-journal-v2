@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+/* header, nav */
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav li {
+  margin: 30px 15px;
+}
+
+nav a {
+  letter-spacing: 3px;
+}
+header {
+  height: 100vh;
+  background-image: url("pic1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 4.5em;
+  margin-bottom: 20px;
+}
+
+header button {
+  border: none;
+  background-color: yellowgreen;
+  padding: 1.2rem 1.5rem;
+  font-size: 1.1em;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* features */
+#features {
+  height: 50vh;
+  position: relative;
+}
+.features-container {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20%;
+}
+
+.feature {
+  margin: 1rem;
+  width: 25%;
+}
+
+.feature h3 {
+  margin: 1rem auto;
+}
+
+.feature p {
+  margin: auto 1rem;
+}
+
+.feature-icon {
+  width: 25%;
+}
+
+/* journal-entry */
+#journal-entry {
+  background-color: yellowgreen;
+  min-height: 30vh;
+  padding: 0.4rem 0;
+}
+
+#journal-entry h1 {
+  margin-top: 1.3rem;
+  margin-left: 1.5rem;
+}
+
+#journal-entry p {
+  margin-top: 0.7rem;
+  margin-left: 1.5rem;
+}

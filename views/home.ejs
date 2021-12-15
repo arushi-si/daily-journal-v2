@@ -1,0 +1,81 @@
+
+<!-- <%- include("partials/header"); -%> -->
+    <!-- <h1>Home</h1>
+    <p> <%= startingContent %> </p>
+
+
+  <%  posts.forEach(function(post){ %>
+
+    <h1><%=post.title%></h1>
+    <p>
+    <%=post.content.substring(0, 100) + " ..."%>
+    <a href="/posts/<%=post._id%>">Read More</a>
+    </p>
+
+
+    <% }) %> -->
+
+
+<!-- <%- include("partials/footer"); -%> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Journal</title>
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li> <a href="">LOGIN / SIGNUP</a></li>
+        <li> <a href="/compose">COMPOSE</a></li>
+        <li> <a href="/contact">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Momento</h1>
+      <p>Momento is a smart private journal that stays up to date effortlessly.<br>
+      Capture and collect moments to explore, relive and share your life story.
+      </p>
+      <button>Start Your Journal Now</button>
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="features-container">
+      <div class="feature">
+        <img src="pictures/mobile-icon.png" alt="picture" class="feature-icon">
+        <h3>Easy Access</h3>
+        <p>Users can access their jornal easily from anywhere around the globe.</p>
+      </div>
+      <div class="feature">
+        <img src="pictures/security-icon.png" alt="picture" class="feature-icon">
+        <h3>100% Private</h3>
+        <p>Designed to focus on privacy, your entries are totally private by default!</p>
+      </div>
+      <div class="feature">
+        <img src="pictures/mobile-icon.png" alt="picture" class="feature-icon">
+        <h3>Easy To Use</h3>
+        <p>It makes creation, updation and deletion of entries flexible.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="journal-entry">
+    <%  posts.forEach(function(post){ %>
+
+      <h1><%=post.title%></h1>
+      <p>
+      <%=post.content.substring(0, 100) + " ..."%>
+      <a href="/posts/<%=post._id%>">Read More</a>
+      </p>
+  
+  
+      <% }) %>
+  </section>
+</body>
+</html>
